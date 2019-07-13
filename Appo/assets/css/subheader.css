@@ -1,0 +1,111 @@
+.header {
+	height: 70px;
+	border-bottom: 1px solid #4e596c;
+}
+.subheader {
+	position: relative;
+	height: 630px;
+}
+.subheader h1,
+.subheader p,
+.subheader a {
+	font-family: 'dosisregular';
+	color: #fff;
+	text-decoration: none;
+}
+.subheader a:hover,
+.subheader a:visited,
+.subheader a:focus {
+	text-decoration: none;
+}
+.subheader h1{
+	font-size: 39px;
+	color: #fff;
+	margin-bottom: 60px;
+}
+.subheader p {
+	font-size: 14px;
+	color: #97a4be;
+	letter-spacing: 1px;
+	line-height: 24px;
+	margin-bottom: 60px;
+}
+.subheader a {
+	padding: 13px;
+	border-radius: 6px;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-right: 30px;
+}
+.subheader a:hover {
+	padding: 13px;
+	border-radius: 6px;
+	background: #00fff0;
+	border: none;
+	color: #233148;
+}
+.subheader .information {
+	padding: 201px 118px 100px 98px;
+}
+#phone {
+	width: 27%;
+	position: relative;
+    right: 115px;
+    bottom: -85px;
+    float: right;
+}
+.phone img {
+	display: inline-block;
+	width: 100%;
+	max-height: 582px;
+	max-width: 278px;
+}
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+
+	/*customize*/
+@media only screen and ( max-width: 1150px){
+	#phone {
+		position: absolute;
+	}
+	.subheader .information {
+		padding: 30px 50px;
+	}
+}
+
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	.subheader .information {
+		padding: 20px 330px 100px 30px;
+	}
+	.subheader a {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: center;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	.subheader a {
+	display: block;
+	margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 600px){
+	.subheader .information {
+		padding: 20px 50px;
+	}
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	.subheader .information {
+		padding: 20px 30px;
+	}
+	.subheader a {
+		width: 100%
+	}
+}

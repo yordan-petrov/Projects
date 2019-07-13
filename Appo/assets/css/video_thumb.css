@@ -1,0 +1,91 @@
+.video-thumb {
+	background: url('../img/Smartphone.jpg')no-repeat center center;
+	background-size: 100% 100%;
+	transition: 0.3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.video-thumb:hover {
+	background-size: 114% 114%;
+}
+.video-thumb .video-frame {
+	min-height: 680px;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: table;
+}
+.video-thumb .video-frame .video-controls {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.video-thumb .video-frame .video-controls .info {
+	max-width: 700px;
+	display: block;
+}
+.video-thumb .video-frame .video-controls h3 {
+	font-size: 17px;
+	color: #fff;
+	margin-bottom: 50px;
+	font-family: 'dosisregular';
+}
+.video-thumb .video-frame .video-controls p {
+	font-size: 14px;
+	color: #fff;
+	font-family: 'dosisregular';
+	line-height: 25px;
+}
+.video-thumb .video-frame .video-controls .play {
+	width: 76px;
+	height: 76px;
+	border-radius: 76px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 30px;
+	box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0.75);
+	transition: 0.3s;
+	z-index: 5;
+}
+.video-thumb .video-frame .video-controls .play:hover {
+	box-shadow: 0 0 0 5px rgba( 255, 255, 255, 0.75), 0 0 0 15px rgba( 255, 255, 255, 0.75);
+}
+.video-thumb .video-frame .video-controls .play path {
+	fill: #00fff0;
+}
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	.video-thumb .video-frame {
+	min-height: 380px;
+	}
+	.video-thumb .video-frame .video-controls p {
+		font-size: 12px;
+		line-height: 12px;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	.video-thumb .video-frame {
+	min-height: 260px;
+	}
+	.video-thumb .video-frame .video-controls .play {
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		margin-bottom: 30px;
+	}
+	.video-thumb .video-frame .video-controls p {
+		display: none;
+	}
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	
+}

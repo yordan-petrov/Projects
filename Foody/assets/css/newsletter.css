@@ -1,0 +1,235 @@
+#newsletter .shell {
+	padding-top: 70px;
+	max-width: 1200px;
+	margin: 0 auto;
+} 
+
+#newsletter h4 {
+	font-size: 35px;
+	color: #28374b;
+	text-align: center;
+	margin-bottom: 40px;
+	font-family: 'lobsterregular';
+}
+
+#newsletter p {
+	font-size: 15px;
+	color: #28374b;
+	font-family: 'montserratregular';
+	letter-spacing: 2px;
+	margin-bottom: 54px;
+	text-align: center;
+	line-height: 20px;
+	padding: 0px 20px;
+}
+
+#newsletter form {
+	max-width: 570px;
+	margin: 0 auto;
+	margin-bottom: 58px;
+}
+
+#newsletter form .submit {
+	max-width: 200px;
+	background: #151d25;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	color: #fff;
+	display: block;
+	width: 100%;
+}
+
+#newsletter form .form-field{
+	padding-right: 200px;
+	position: relative;
+}
+
+#newsletter form .form-field > input {
+	height: 53px;
+	border: 1px solid #151d25;
+	width: 100%;
+	padding: 0 15px;
+	outline: none;
+}
+
+#newsletter .projects:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#newsletter .projects {
+	height: 290px;
+	overflow: hidden;
+}
+
+#newsletter .projects > div {
+	height: 310px;
+	width: 33.3333333%;
+	float: left;
+	position: relative;
+	top: 20px;
+	transition: 0.3s;
+}
+
+#newsletter .projects > div:hover {
+	top: 0px ;
+}
+
+#newsletter .projects > div:after {
+	content: '';
+	position: absolute;
+	background: linear-gradient(180deg, rgba(2,0,36,0.55) 10%, rgba(0,212,255,0) 100%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	transition: 0.3
+}
+
+#newsletter .projects > div:hover:after {
+	opacity: 1;
+}
+
+#newsletter .projects .pizza_img {
+	background: url('../img/pizza.jpg') no-repeat center center;
+	background-size: cover;
+	transition: 0.3s;
+}
+
+#newsletter .projects .burger_img {
+	background: url('../img/burger.jpg') no-repeat center center;
+	background-size: cover;
+	transition: 0.3s;
+}
+
+#newsletter .projects .pancake_img {
+	background: url('../img/pancake.jpg') no-repeat center center;
+	background-size: cover;
+	transition: 0.3s;
+}
+
+#newsletter .projects .social {
+	z-index: 1;
+	position: relative;
+	padding: 15px;
+}
+
+
+#newsletter .projects .social span,
+#newsletter .projects .social a {
+	font-size: 18px;
+	color: #fff;
+	outline: none;
+	text-decoration: none;
+	padding: 5px;
+	display: inline-block;
+	position: relative;
+	top: -100px;
+	transition: 0.3s;
+}
+
+#newsletter .projects .social a:nth-child(1) {
+	transition-delay: 0.05s;
+}
+
+#newsletter .projects .social a:nth-child(2) {
+	transition-delay: 0.1s;
+}
+
+#newsletter .projects .social a:nth-child(3) {
+	transition-delay: 0.15s;
+}
+
+#newsletter .projects > div:hover .social a {
+	top: 0px;
+}
+
+#newsletter .projects .social span {
+	float: right;
+	font-size: 16px;
+	font-style: italic;
+	top: 0;
+}
+
+
+#newsletter .projects .social:focus,
+#newsletter .projects .social:visited,
+#newsletter .projects .social:hover {
+	text-decoration: none;
+	outline: none;
+}
+
+
+/*Large -lg*/
+@media only screen and (max-width: 1200px) {
+	#newsletter .projects {
+		height: auto;
+	}
+	#newsletter .projects > div {
+		top: 0px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#newsletter .projects .social a {
+		top: 0px;
+		left: -200px;
+		font-size: 22px;
+	}
+	#newsletter .projects > div:hover .social a {
+	left: 0px;
+	}
+	#newsletter .projects .social a:nth-child(1) {
+	transition-delay: 0.2s;
+	}
+
+	#newsletter .projects .social a:nth-child(2) {
+		transition-delay: 0.15s;
+	}
+
+	#newsletter .projects .social a:nth-child(3) {
+		transition-delay: 0.05s;
+	}
+	#newsletter .projects .social span {
+		font-size: 20px;
+	}
+	
+
+}
+
+/*Medium -md*/
+@media only screen and (max-width: 992px) {
+	#newsletter .projects .social a {
+		left: 0px;
+	}
+}
+
+/*Small -sm*/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/*Customiza*/
+@media only screen and (max-width: 600px) {
+	#newsletter form .form-field {
+	padding-right: 0px; 
+    position: static; 
+    text-align: center;
+    padding: 0px 20px;
+	}
+	#newsletter form .submit {
+		position: static;
+		display: inline-block;
+		margin-top: 30px;
+	}
+}
+
+/*Extra small -xs*/
+@media only screen and (max-width: 500px) {
+
+}

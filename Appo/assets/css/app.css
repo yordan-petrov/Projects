@@ -1,0 +1,51 @@
+	/*Fonts*/
+	/*font-family: 'dosisregular';*/
+@import url('fonts.css');
+
+@import url('bootstrap.css');
+@import url('reset.css');
+@import url('font-awesome.css');
+
+
+@import url('header.css');
+@import url('subheader.css');
+@import url('service.css');
+@import url('company_info.css');
+@import url('app_presentation.css');
+@import url('video_thumb.css');
+@import url('download_part.css');
+@import url('quote.css');
+@import url('app_add.css');
+@import url('footer.css');
+
+
+
+body {
+	background: #fff;
+}
+	.wrap .container-fluid {
+		max-width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+}
+header  {
+	background: url('../img/header.png')no-repeat center center;
+	background-size: cover;
+}
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	
+}

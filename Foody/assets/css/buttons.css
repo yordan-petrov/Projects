@@ -1,0 +1,89 @@
+/*Sizing*/
+.btn_xlg {
+	min-width: 170px;
+}
+
+.btn_lg {
+	min-width: 170px;
+}
+
+.btn_md {
+	min-width: 170px;
+}
+
+.btn_sm {
+	min-width: 170px;
+}
+
+
+/*Types*/
+
+.btn_link:focus,
+.btn_link:hover,
+.btn_link:visited,
+.btn_link {
+	text-decoration: none;
+	padding: 9px 15px 15px;
+	background-color: #151d25;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+/*Effects*/
+
+/*[class*="btn_inv_"]  -->all elements that include "btn_inv_"  */ 
+
+.btn_inv_b,
+.btn_inv_w {
+	position: relative;
+	transition: 0.5s;
+}
+
+.btn_inv_ span,
+.btn_inv_w span {
+	position: relative;
+	z-index: 2;
+}
+
+.btn_inv_b:before,
+.btn_inv_w:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	transition: 0.5s;
+	z-index: 1;	
+}
+
+.btn_inc_b:hover:before,
+.btn_inv_w:hover:before {
+	width: 100%;
+}
+
+.btn_inv_b:before {
+	background: #000;
+}
+
+.btn_inv_w:before {
+	background: #fff;
+}
+
+
+.btn_inv_b:hover {
+	color: #fff;
+}
+
+.btn_inv_w:hover {
+	color: #000;
+}
+
+.btn_inv_w:hover:before {
+	width: 100%;
+}

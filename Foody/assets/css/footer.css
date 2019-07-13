@@ -1,0 +1,161 @@
+footer .wrap:first-child {
+	background-color: #27364a;
+	padding: 110px 0px 90px;
+}
+
+footer .wrap:last-child {
+	background-color: #151d25;
+	padding: 50px;
+}
+
+footer h4 {
+	color:	#fff;
+	font-family: 'montserratregular';
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+}
+
+footer ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+footer ul li {
+	color: #fff;
+	font-family: 'montserratregular';
+	font-size: 15px;
+	margin-right: 75px;
+	float: left;
+	letter-spacing: 1px;
+	line-height: 35px;
+}
+
+footer .footer-shell {
+	text-align: left;
+}
+
+footer .footer-shell h5 {
+	color: #fff;
+	font-family: 'montserratregular';
+	font-size: 16px;
+	display: inline-block;
+	width: 49%;
+}
+
+footer .footer-shell .p-social {
+	display: inline-block;
+	width: 49%;
+	text-align: right;	
+}
+
+footer .footer-shell .p-social a:focus,
+footer .footer-shell .p-social a:visited,
+footer .footer-shell .p-social a:hover {
+	outline: none;
+	text-decoration: none;
+}
+
+
+footer .footer-shell .p-social a {
+	color: #fff;
+	font-size: 20px;
+	margin-left: 30px;
+	text-decoration: none;
+	outline: none;
+}
+
+
+/*Large -lg*/
+@media only screen and (max-width: 1200px) {
+	footer h4 {
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	footer ul{
+		margin-bottom: 30px;
+	}
+	footer ul li {
+		width: 50%;
+		margin-right: 0px;
+		font-size: 20px;
+	}
+	footer ul li:first-child {
+		text-align: right;
+		padding-right: 100px;
+	}
+	footer ul li:last-child {
+		text-align: left;
+		padding-left: 100px;
+	}
+	footer .wrap:first-child {
+		padding: 50px;
+	}
+}
+
+/*Medium -md*/
+@media only screen and (max-width: 992px) {
+
+}
+
+/*Customize*/
+@media only screen and (max-width: 850px) {
+	footer .footer-shell h5 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px
+	}
+	footer .footer-shell .p-social {
+	width: 100%;
+	text-align: center;	
+	}
+}
+
+
+/*Small -sm*/
+@media only screen and (max-width: 768px) {
+	footer ul li:first-child {
+		text-align: right;
+		padding-right: 50px;
+	}
+	footer ul li:last-child {
+		text-align: left;
+		padding-left: 50px;
+	}
+}
+
+/*Customize*/
+@media only screen and (max-width: 670px) {
+	footer ul li:first-child,
+	footer ul li:last-child {
+		width: 100%;
+		margin-right: 0px;
+		font-size: 18px;
+		text-align: center;
+		padding: 0px;
+	}
+	footer ul li:first-child {
+		margin-bottom: 20px;
+	}
+	footer h4 {
+		font-size: 28px;
+	}
+}
+
+/*Small -sm */
+@media only screen and (max-width: 500px) {
+	footer .wrap:last-child {
+	padding: 30px 10px;
+}
+}
+
+
+/*Customiza*/
+@media only screen and (max-width: 400px) {
+	footer .wrap:first-child {
+		padding: 50px 20px;
+	}
+}

@@ -1,0 +1,38 @@
+.quote {
+	background: url(../img/S10-design.jpg)no-repeat center center;
+	background-size: cover;
+
+}
+
+.quote h3 {
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	color: #00fff1;
+	max-width: 767px;
+	line-height: 25px; 
+	margin: 133px 200px 145px;
+}
+
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	.quote h3 {
+	font-size: 14px;
+	margin: 133px 100px 145px;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	.quote h3 {
+	margin: 133px 10px 145px;
+	}
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	
+}

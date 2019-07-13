@@ -1,0 +1,155 @@
+#about-info {
+	max-width: 970px;
+	box-sizing: border-box;
+	margin: -103px auto;
+	position: relative;
+	z-index: 5;
+}
+
+#about-info:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#about-info > div {
+	width: 50%;
+}
+
+#about-info  div.content {
+	position: absolute;
+	height: 100%;
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding: 77px 50px 124px 60px;
+}
+
+#about-info > div  img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#about-info  div.content h3 {
+	font-family: 'lobsterregular';
+	font-size: 35px;
+	color: #28374b;
+	position: relative;
+
+	padding-bottom: 27px;
+	margin-bottom: 30px;
+}
+
+#about-info  div.content h3:after {
+	content: '';
+	height: 1px;
+	max-width: 110px;
+	width: 100%;
+	background: url('../img/carousel/separator/stich.png') repeat-x center center;
+	background-size: 30px 1px;
+	background-position-x: 0px;  
+	display: block;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto auto 0 0;
+}
+
+#about-info  div.content p {
+	letter-spacing: 3px;
+	color: #9fb0a5;
+	font-size: 15px;
+	font-family: 'montserratregular';
+	line-height: 23px;
+}
+
+#about-info  div.content a {
+	position: absolute;
+	left: 60px;
+	bottom: 79px;
+	border: 1px solid black;
+	box-sizing: content-box;
+}
+
+
+/*Large -lg*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*Medium -md*/
+@media only screen and (max-width: 992px) {
+
+	#about-info {
+		margin: 0px auto;
+	}
+
+	#about-info > div:first-child {
+		width: 25%;
+	}
+	#about-info > div.content {
+		width: 75%;
+		padding: 20px 25px;
+	}
+
+	#about-info div.content a {
+		top: 20px;
+		right: 25px;
+		left: auto;
+		bottom: auto;
+	}
+
+	#about-info  div.content h3 {
+		margin: 15px 0;
+		padding: 15px 0;
+	}
+
+	#about-info  div.content p {
+		font-size: 12px
+	}
+	#about-info > div:first-child {
+		display: none;
+	}
+	#about-info > div.content {
+		position: relative;	
+		width: 100%;
+		padding: 20px 25px;
+	}
+
+	#about-info div.content a {
+		position: relative;
+		margin: 15px auto 0;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+	}
+}
+
+/*Small -sm*/
+@media only screen and (max-width: 768px) {
+
+}
+
+/*Extra small -xs*/
+@media only screen and (max-width: 500px) {
+
+	#about-info {
+		text-align: center;
+	}
+
+	#about-info div.content a {
+		display: block;
+	}
+
+	#about-info  div.content h3:after {
+	background-size: 30px 1px;
+	background-position-x: 5px;	
+	margin: auto auto 0 auto;
+}
+
+}

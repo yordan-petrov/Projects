@@ -1,0 +1,61 @@
+section .company-info {
+	text-align: left;
+}
+.image {
+	width: 45%;
+	height: 530px;
+	background: url('../img/image.jpg')no-repeat center center;
+	background-size: cover;
+	background-color: rgba( 34, 48, 71, 0.5) !important;
+	display: inline-block;
+}
+.company-info .get-more {
+	height: 530px;
+	width: 55%;
+	background: #f5f6fa;
+	font-family: 'dosisregular';
+	padding: 145px 0 0 125px;
+	float: right;
+	display: inline-block;
+}
+.company-info .get-more h3 {
+	font-size: 30px;
+	color: #000;
+	max-width: 245px;
+	margin-bottom: 70px;
+}
+.company-info .get-more p {
+	font-size: 14px;
+	color: #97a4be;
+	max-width: 421px;
+	line-height: 25px;
+}
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	.company-info .get-more {
+	padding: 145px 0 0 50px;
+	}
+	.company-info .get-more p {
+	font-size: 14px;
+	max-width: 300px;
+	line-height: 25px;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	.image {
+	width: 100%;
+	}
+	.company-info .get-more {
+	width: 100%;
+	}
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	
+}

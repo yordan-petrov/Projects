@@ -1,0 +1,35 @@
+/*Fonts*/
+@import url('fonts.css');
+@import url('font-awesome.css');
+@import url('custom_fonts.css');
+
+/*Grid*/
+@import url('reset.css');
+@import url('bootstrap.css');
+
+/*General*/
+@import url('buttons.css');
+
+/*Sections*/
+@import url('top_navigation.css');
+@import url('main_carousel.css');
+@import url('about_info.css');
+@import url('quote.css');
+@import url('presentation.css');
+@import url('video_thumb.css');
+@import url('newsletter.css');
+@import url('footer.css');
+
+
+.wrap > .container-fluid {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin: 0px;
+}
+
+a {
+	outline: 0;
+}

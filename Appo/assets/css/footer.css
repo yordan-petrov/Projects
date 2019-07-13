@@ -1,0 +1,139 @@
+footer .table table {
+	margin: 139px 47px auto 28px;
+	width: 100%;
+
+}
+
+footer .table table tr td {
+	font-family: 'dosisregular';
+	font-size: 14px;
+	color: #97a4be;
+	margin-bottom: 18px;
+	display: inline-block;
+	width: 20%;
+}
+footer .table table tr th {
+	font-family: 'dosisregular';
+	font-size: 17px;
+	color: #233148;
+	margin-bottom: 29px;
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+}
+
+footer .table table tr {
+	font-family: 'dosisregular';
+	margin-left: 30px;
+}
+footer .subscribe h3 {
+	font-size: 30px;
+	color: #233148;
+	margin-top: 87px;
+	text-align: center;
+	margin-bottom: 34px;
+}
+footer .subscribe p {
+	font-size: 17px;
+	color: #97a4be;
+	margin-bottom: 71px;
+	text-align: center;
+}
+footer .subscribe {
+	text-align: center;
+	margin-bottom: 98px;
+}
+footer .subscribe form input {
+	max-width: 570px;
+	min-height: 55px;
+	width: 100%;
+	background: #f5f6fa;
+	margin-right: 30px;
+	border: none; 
+}
+footer .subscribe form a {
+	padding: 17px 39px 17px 46px;
+	background: #00fff0;
+	color: #233148;
+	font-size: 17px;
+	border: none; 
+}
+footer .subscribe form a:visited,
+footer .subscribe form a:focus,
+footer .subscribe form a:hover {
+	box-shadow: 0 0 15px 0px rgba(0,255,240,0.75);
+	text-decoration: none;
+	outline: none;
+}
+.footer-bottom {
+	background: #223047;
+}
+.footer-bottom p {
+	font-size: 17px;
+	color: #00fff1;
+	margin-bottom: 49px;
+	margin-top: 39px;
+}
+.footer-bottom i{
+	color: #fff;
+	margin-top: 36px;
+	margin-right: 45px;
+	float: right;
+	cursor: pointer;
+	font-size: 25px;
+	margin-bottom: 49px;
+}
+
+
+
+	/*Large*/
+
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	footer .subscribe form input {
+		display: inline-block;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	footer .subscribe form a {
+		display: block;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	footer .table table {
+		margin: 100px 5px;
+	}
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	footer .table table {
+		margin: 100px 0;
+	}
+	footer .table table tr th {
+		text-align: center;
+		font-size: 14px;
+	}
+	footer .table table tr td {
+		font-size: 12px;
+	}
+	.footer-bottom p {
+		text-align: center;
+	}
+}
+			/*custom*/
+@media only screen and (max-width: 350px){
+	footer .table table tr th {
+		text-align: left;
+		font-size: 12px;
+	}
+	footer .table table tr td {
+		font-size: 10px;
+	}
+	.footer-bottom i {
+		margin-right: 30px;
+	}
+}

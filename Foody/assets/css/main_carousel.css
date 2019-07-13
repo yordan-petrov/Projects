@@ -1,0 +1,78 @@
+#main-carousel {
+	height: 850px;
+	background: url('../img/carousel/first.jpg') no-repeat;
+	background-position: cover;
+	padding: 227px;
+	text-align: center;
+}
+
+#main-carousel h1 {
+	font-family: 'lobsterregular';
+	color: #fff;
+	font-size: 85px;
+	text-align: center;
+	padding-bottom: 66px;
+	margin-bottom: 55px;
+	position: relative;
+}
+
+#main-carousel h1:after {
+	content: '';
+	height: 1px;
+	max-width: 210px;
+	width: 100%;
+	background: url('../img/carousel/separator/separator.png') repeat-x center center;
+	background-size: 30px 1px;
+	background-position-x: 10px;  
+	display: block;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto auto 0 auto;
+}
+
+#main-carousel > p {
+	max-width: 350px;
+	font-family: 'montserratregular';
+	font-size: 20px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 3px;
+	margin-bottom: 70px;
+}
+
+/*Large -lg*/
+@media only screen and (max-width: 1200px) {
+	#main-carousel {
+		padding: 150px 100px;
+	}
+}
+
+/*Medium -md*/
+@media only screen and (max-width: 992px) {
+	#main-carousel {
+		padding: 150px 50px;
+		height: auto;
+	}
+}
+
+/*Small -sm*/
+@media only screen and (max-width: 768px) {
+	
+}
+
+/*Extra small -xs*/
+@media only screen and (max-width: 500px) {
+	#main-carousel {
+		padding: 150px 20px;
+		height: auto;
+	}
+
+	#main-carousel h1 {
+		font-size: 60px;
+	}
+}

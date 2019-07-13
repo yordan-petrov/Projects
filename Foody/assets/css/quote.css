@@ -1,0 +1,32 @@
+#quote {
+	background: url('../img/flowers.jpg') no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+#quote q {
+	height: 480px;
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+#quote q div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#quote q div p {
+	font-family: 'montserratregular';
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 4px;
+	margin-bottom: 26px;
+	text-transform: uppercase;
+}
+
+#quote q div h3 {
+	font-family: 'lobsterregular';
+	font-size: 20px;
+	color: #fff;
+}

@@ -1,0 +1,160 @@
+section .app-add {
+	background: #f5f6fa;
+	position: relative;
+}
+section .app-add:before {
+	content: '';
+	display: block;
+	clear: both;
+}
+section .app-add .phones {
+	position: relative;
+	margin-top: 185px;
+	float: left;
+}
+section .app-add .stores {
+	float: right;
+}
+section .app-add #leftphone {
+	max-width: 244px;
+	max-height: 506px;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	left: 85px;
+	bottom: -26px;
+}
+section .app-add #rightphone {
+	max-width: 187px;
+	max-height: 388px;
+	width: 100%;
+	display: inline-block;
+	margin-left: 274px;
+}
+section .app-add .stores a img {
+	max-width: 145px;
+	max-height: 43px;
+	width: 100%;
+	display: inline-block;
+	margin-right: 28px;
+	margin-bottom: 228px;
+}
+section .app-add .stores h3 {
+	font-size: 40px;
+	color: #233148;
+	margin-top: 222px;
+	margin-bottom: 40px;
+}
+section .app-add .stores p {
+	font-size: 17px;
+	color: #97a4be;
+	max-width: 479px;
+	line-height: 25px;
+	margin-bottom: 68px;
+}
+section .app-add .bottombtn {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-bottom: -30px;
+}
+section .app-add .bottombtn a{
+	background: #00fff0;
+	color: #233148;
+	font-size: 17px;
+	padding: 29px 120px;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	box-shadow: 0 0 15px 0px rgba(0,255,240,0.75);
+}
+section .app-add .bottombtn a:focus,
+section .app-add .bottombtn a:visted,
+section .app-add .bottombtn a:hover {
+	text-decoration: none;
+	outline: none;
+	box-shadow: 0 0 15px 0px rgba(0,255,240,0.75);
+}
+
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	section .app-add .phones {
+		float: none;
+	}
+	section .app-add .stores {
+		float: none;
+	}
+	section .app-add .bottombtn,
+	section .app-add .stores p,
+	section .app-add .stores h3 {
+		text-align: center;
+	}
+	section .app-add .stores p {
+		max-width: none;
+	}
+	section .app-add .stores a img {
+		margin-bottom: 100px;
+		margin-left: 185px;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	
+	section .app-add .stores a img {
+		margin-bottom: 100px;
+		margin-left: 145px;
+	}
+	section .app-add .stores h3 {
+		margin-top: 150px;
+	}
+
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	section .app-add .phones {
+		width: 63%;
+	}
+	section .app-add #leftphone {
+		width: 97%;
+		left: 10px;
+		bottom: -26px;
+	}
+	section .app-add #rightphone {
+		width: 74%;
+		margin-left: 157px;
+	}
+	section .app-add .bottombtn,
+	section .app-add .stores p,
+	section .app-add .stores h3 {
+		text-align: center;
+	}
+	section .app-add .stores a img {
+		margin-right: 0;
+		margin-left: 18px;
+	}
+	section .app-add .bottombtn a{
+		padding: 29px 70px;
+	}
+
+}
+
+		/*custom*/
+
+@media only screen and (max-width: 350px){
+	section .app-add .stores a img{
+		margin-left: 0;
+		display: inline-block;
+		width: 48%;
+	}
+	section .app-add .bottombtn a{
+		padding: 29px 50px;
+	}
+
+}

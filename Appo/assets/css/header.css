@@ -1,0 +1,138 @@
+header {
+	background: #223047;
+}
+header .row {
+	padding: 20px 0 0 0;
+}
+header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+header nav {
+	text-align: center;
+	display: inline-block;
+	float: right;
+	width: 710px;
+
+}
+header nav ul {
+	float: left;
+}
+header nav ul li {
+	display: inline-block;
+	margin-right: 30px;
+	margin-top: 5px;
+
+}
+header nav ul li span {
+	margin-left: 11px;
+}
+
+header nav ul li a:visited,
+header nav ul li a:hover,
+header nav ul li a:focus,
+header nav ul li a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	outline: none;
+	font-family: 'dosisregular';
+}
+
+header nav ul li:nth-child(4) {
+	margin-right: 300px;
+}
+
+header nav ul li:last-child a{
+	font-family: 'dosisregular'; 
+	background: #00fff0;
+	color: #233148;
+	font-size: 14px;
+	padding: 12px 33px 12px 36px;
+	border-radius: 6px; 
+}
+
+
+.logo {
+	display: inline-block;
+}
+.canvas-open img {
+	float: right;
+	cursor: pointer;
+	position: absolute;
+    right: 20px;
+    top: 6px;
+}
+nav ul span {
+	font-size: 25px;
+	color: #fff;
+	display: none;
+}
+
+
+	/*Large*/
+@media only screen and (max-width: 1200px){
+
+}
+	/*Mid*/
+@media only screen and (max-width: 992px){
+	header nav {
+	width: 630px;
+	}
+	header nav ul li:nth-child(4) {
+    margin-right: 220px;
+	}
+}
+	/*Small*/
+@media only screen and (max-width: 768px){
+	header nav {
+		float: none;
+		margin: auto;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		left: -100%;
+		top: -100%;
+		transition: 0.3s;
+		background: #223047;
+		z-index: 2;
+	}
+	nav ul,
+	nav ul span {
+		display: block;
+		float: none !important;
+		cursor: pointer;
+		text-align: center;
+	}
+	nav ul span {
+		position: absolute !important;
+		top: 5px;
+		left: 5px;
+
+	}
+	nav ul li {
+		width: 100%;
+		margin: 0;
+		margin-top: 40px !important;
+		height: 40px;
+	}
+	nav ul li a {
+		width: 100%;
+		font-size: 17px !important;
+	}
+
+	header nav.open {
+		top: 0 !important;
+		left: 0 !important;
+	}
+	header nav ul li span {
+		display: none;
+	}
+
+}
+	/*Extra small*/
+@media only screen and (max-width: 500px){
+	
+}

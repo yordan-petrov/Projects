@@ -1,0 +1,41 @@
+.download-part {
+	text-align: center;
+	background: url('../img/map.png') no-repeat center center;
+
+}
+.download-part img {
+	display: inline-block;
+	width: 100%;
+}
+
+.download-part h3{
+	font-size: 30px;
+	color: #233148;
+	font-family: 'dosisregular';
+	margin-top: 253px;
+	margin-bottom: 40px;
+}
+.download-part p {
+	font-size: 17px;
+	color: #233148;
+	font-family: 'dosisregular';
+	margin-bottom: 70px;
+}
+.download-part a {
+	display: inline-block;
+	font-size: 17px;
+	color: #233148;
+	background: #00fff0;
+	font-family: 'dosisregular';
+	text-decoration: none;
+	margin-bottom: 193px;
+	padding: 15px 44px 23px 49px;
+	cursor: pointer;
+}
+.download-part a:hover,
+.download-part a:visited,
+.download-part a:focus {
+	text-decoration: none;
+	overflow: none;
+	box-shadow: 0 0 15px 0px rgba(0,255,240,0.5);
+}
