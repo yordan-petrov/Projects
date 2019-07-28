@@ -1,62 +1,78 @@
+
 <?php 
-    require_once 'config/db.php';
-    require_once 'config/tables.php';
+
+require_once 'config/db.php';
+require_once 'config/tables.php';
 
 $name = '';
 $lastName = '';
 $email = '';
 $password = '';
-$rePassword = '';
+$rePassword ='';
 $errors = [];
 
-
 if(isset($_POST['submit'])){
+    
     if(!mb_strlen($_POST['name'])){
-        $errors[] = 'Please enter Your name';
+        $errors[] = 'Please Enter Your Name';
+        
     }else if(mb_strlen($_POST['name']) > 32
-    || mb_strlen($_POST['name']) <4){
-        $errors [] = 'Your name shoud be betwean 4 and 32 symbols';
+        || mb_strlen($_POST['name']) < 4){
+
+        $errors[] = 'Your Name shoud be between 4 and 32 symbols';
     }else{
         $name = trim($_POST['name']);
     }
 
     if(!mb_strlen($_POST['lastname'])){
-        $errors[] = 'Please enter your lastname';
-    }else if(mb_strlen($_POST['lastname']) > 32 
-    || mb_strlen($_POST['lastname']) < 4 ){
-        $errors[] = 'Your name shoud be betwean 4 and 32 symbols';
-    }else {
+        $errors[] = 'Please Enter Your last name';
+    
+    }else if(mb_strlen($_POST['lastname']) > 32
+        || mb_strlen($_POST['lastname']) < 4){
+
+        $errors[] = 'Your last name shoud be between 4 and 32 symbols';
+    }else{
         $lastName = trim($_POST['lastname']);
     }
 
     if(!mb_strlen($_POST['email'])){
-        $errors[] = 'Enter your Email';
-    }else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-        $errors[] = 'Please enter valid email adress';
-    }else {
+        $errors[] = 'Please Enter valid Email address';
+
+    }else if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
+        $errors[] = 'Please Enter valid Email address';
+
+    } else {
+        
         $sql = "SELECT `id`
                 FROM `".TABLES_USERS."`
-                WHERE `id` = '".mysqli_real_escape_string($conn , $_POST['email'])."'
-        ";
-        if($result = mysqli_query($conn , $sql)){
+                WHERE `email` = '".mysqli_real_escape_string($conn, $_POST['email'])."'
+            ";
+        $result = mysqli_query($conn, $sql);
+        
+        if ($result = mysqli_query($conn, $sql)) {
             $email = trim($_POST['email']);
-            if(mysqli_num_rows($result)){
-                $errors[] = 'Email alredy exist';
-            }else {
+            if (mysqli_num_rows($result)) {
+                $errors[] = "This exists";
+            }else{
                 $email = trim($_POST['email']);
             }
         }
+        
     }
+    
     if(!mb_strlen($_POST['password'])){
-        $errors[] = 'Enter your password';
-    }else if(mb_strlen($_POST['password']) < 8){
-        $errors[] = 'Your password must be more then 8 symbols';
+        $errors[] = 'Please Enter valid password';
+
+    }else if (mb_strlen($_POST['password'])<8){
+        $errors[] = 'Please Enter valid password';
+
     }else if($_POST['password'] !== $_POST['re_password']){
-        $errors[] = "your password not match";
+        $errors[] = 'Please Enter again your passes';
+
     }else{
         $password = trim($_POST['password']);
     }
-    
+    // ShowArray($email);
     if(!count($errors)){ 
         $password = password_hash($password, PASSWORD_DEFAULT);
         $sql = " INSERT INTO `".TABLES_USERS."`
@@ -76,64 +92,57 @@ if(isset($_POST['submit'])){
             NOW()
         )
         ";
-        ShowArray($sql);
+        // ShowArray($sql);
         if(mysqli_query($conn,$sql)){
-            echo "Registered";
+            echo "okey";
         } else {
-            echo "problem with registration";
+            echo "nishto";
         }
     }
 }
+// ShowArray($errors);
 
-ShowArray($errors);
+    
 
-
-function showArray($data){
+function ShowArray($data){
     echo "<pre>";
     print_r($data);
     echo "</pre>";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Register at Movies</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
     <form action="" method="POST">
-    <p>Name</p>
-    <input type="text" name="name" value="<?=$name?>">
-    <br>
-    <p>lastname</p>
-    <input type="text" name="lastname" value="<?=$lastName?>">
-    <br>
-    <p>Email</p>
-    <input type="email" name="email" value="<?=$email?>">
-    <br>
-    <p>Password</p>
-    <input type="password" name="password">
-    <br>
-    <p>Retype password</p>
-    <input type="password" name="re_password">
-    <br>
-    <input type="submit" name="submit" value="Register Now">
-    <br>
-    <br>   
+        <p>Name:</p>
+        <input type="text" name="name" value="<?=$name?>"/>
+        <p>Lastname:</p>
+        <input type="text" name="lastname" value="<?=$lastName?>"/>
+        <p>Emali:</p>
+        <input type="email" name="email" value="<?=$email?>"/>
+        <p>Password:</p>
+        <input type="password" name="password"/>
+        <p>Repeat Password:</p>
+        <input type="password" name="re_password"/>
+        <br>
+        <button type="submit" name="submit"> Send</button>
     </form>
-        <a href="login.php" alt='login'>Alredy have registration ?</a>
+    <a href="login.php">Go to login page</a>
 
     <div>
         <ul>
-        <?php if(isset($errors) && count($errors)) : ?>
-        <?php for($i = 0; $i < count($errors); $i++) :?>
-        <li> <?=$errors[$i]?> </li>
-        <?php endfor ?>
-        <?php endif ?>
+            <?php if(isset($errors) && count($errors)) :?>
+            <?php for($i = 0; $i < count($errors) ;$i++) :?>
+            <li> <?=$errors[$i];?> </li>
+            <?php endfor ?>
+            <?php endif ?>
         </ul>
     </div>
-    </body>
+</body>
 </html>
